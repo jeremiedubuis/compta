@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "lib": ["DOM", "ESNext"],
+    "module": "commonjs",
+    "target": "es5",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "baseUrl": "./",
+    "paths": {
+      "$shared/*": ["../shared/*"],
+      "$types/*": ["../shared/types/*"],
+      "$helpers/*": ["../shared/helpers/*"],
+      "$handlers/*": ["./handlers/*"],
+      "$models/*": ["./models/*"],
+      "$queries/*": ["./queries/*"]
+    },
+    "outDir": "dist"
+  },
+  "include": ["./**/*", "../shared/**/*"]
+}

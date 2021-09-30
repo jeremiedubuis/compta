@@ -1,0 +1,52 @@
+{
+  "name": "compta",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "dev:server": "ts-node-dev --project api/tsconfig.json  -r tsconfig-paths/register --respawn --transpile-only api/server.ts",
+    "build:server": "tsc --importHelpers --project api/tsconfig.json && tscpaths -p api/tsconfig.json -s ./api -o ./api/dist"
+  },
+  "author": "Jérémie Dubuis",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "argon2": "^0.28.2",
+    "body-parser": "^1.19.0",
+    "classnames": "^2.3.1",
+    "cookie": "^0.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "fastest-validator": "^1.11.1",
+    "generic-form": "^1.1.8",
+    "jwt-redis": "^6.0.0",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.0",
+    "next": "^11.1.2",
+    "polka": "^0.5.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "recoil": "^0.4.1",
+    "redis": "^3.1.2",
+    "sqlstring": "^2.3.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.1",
+    "@types/lodash": "^4.14.174",
+    "@types/node": "^16.9.6",
+    "@types/polka": "^0.5.3",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@types/redis": "^2.8.32",
+    "@types/sqlstring": "^2.3.0",
+    "@types/uuid": "^8.3.1",
+    "prettier": "^2.4.1",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
+    "tscpaths": "0.0.9",
+    "typescript": "^4.4.3"
+  }
+}

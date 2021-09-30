@@ -1,0 +1,55 @@
+.field {
+    position: relative;
+    width: 100%;
+    padding-bottom: 30px;
+    float: left;
+    clear: both;
+}
+
+.field :global(.generic-form-error) {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    color: var(--color-alert);
+}
+
+.small {
+    width: 100px;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    background-color: var(--field-bg-color);
+    border: 0;
+    height: 50px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+    outline: 0;
+    border: 1px solid var(--field-border-color);
+}
+
+.field:global(.has-error) input,
+.field:global(.has-error) textarea,
+.field:global(.has-error) select {
+    border: 1px solid var(--color-alert);
+}
+
+.field + .field,
+.field + button {
+    margin-top: 5px;
+}

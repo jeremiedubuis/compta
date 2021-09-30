@@ -1,0 +1,15 @@
+.button {
+    font-family: var(--font-body);
+    font-size: var(--font-size-medium);
+    padding: 10px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: var(--radius-medium);
+
+}
+
+.primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+}

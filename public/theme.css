@@ -1,0 +1,29 @@
+:root {
+
+    --color-primary: #3d405b;
+    --color-secondary: #e07a5f;
+    --color-misc: #81b29a;
+
+    --color-bg-primary: #f4f1de;
+    --color-bg-secondary: #f2cc8f;
+
+    --color-text-primary: #fff;
+    --color-text-secondary: #fff;
+    --color-text-misc: #fff;
+
+    --color-alert: red;
+
+    --font-body: Arial, sans-serif;
+
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+
+    --radius-medium: 20px;
+
+}
+
+html {
+    font-size: 15px;
+    background: var(--color-bg-primary);
+
+}
